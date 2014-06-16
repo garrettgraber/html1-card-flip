@@ -1,0 +1,48 @@
+/*
+	Put your custom CSS here.
+
+	You may find these CSS3 properties useful:;
+		transition
+		-webkit-transform
+		-webkit-transform-style
+		-webkit-backface-visibility
+*/
+
+.portfolio-item {
+	position: relative;
+}
+
+.portfolio-item:hover .back {
+	opacity: 1.0;
+}
+
+.portfolio-item:hover .front {
+	opacity: 0.0;
+}
+
+.front {
+	overflow: hidden;
+	position: relative;
+/*	transition-property: opacity;
+	transition-duration: 3.0s;
+	transition-timing-function: linear; */
+	transition: opacity 3s ease-in-out;
+	width: 200px;
+	height: 200px;
+	top: 0px;
+	left: 0px
+}
+
+.back {
+	padding: 0px;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 0px;
+	left: 0px;
+	opacity: 0.0;
+/*	transition-property: opacity;
+	transition-duration: 3.0s;
+	transition-timing-function: linear; */
+	transition: opacity 3s ease-in-out;
+}
